@@ -30,6 +30,7 @@ const RAW_RUNTIME_STATE =
           ["@types/react", "npm:18.2.79"],\
           ["@types/react-dom", "npm:18.2.25"],\
           ["@types/react-pdf", "npm:7.0.0"],\
+          ["@xionhub/token", "npm:0.1.11"],\
           ["canvas", "npm:2.11.2"],\
           ["eslint", "npm:8.57.0"],\
           ["eslint-config-next", "virtual:d3ee54bf0194470f0d6214084130f6e7d9872d160a3dd3ba52c47a0c45807b8e8bb6be340f825920fffcc55a2d34b7cc7190be14ac844a0e2aa1fe97e235851b#npm:14.2.1"],\
@@ -602,6 +603,15 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/@ungap-structured-clone-npm-1.2.0-648f0b82e0-8209c937cb.zip/node_modules/@ungap/structured-clone/",\
         "packageDependencies": [\
           ["@ungap/structured-clone", "npm:1.2.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@xionhub/token", [\
+      ["npm:0.1.11", {\
+        "packageLocation": "./.yarn/cache/@xionhub-token-npm-0.1.11-9f0e6ca986-86e46406c2.zip/node_modules/@xionhub/token/",\
+        "packageDependencies": [\
+          ["@xionhub/token", "npm:0.1.11"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -4351,6 +4361,7 @@ const RAW_RUNTIME_STATE =
           ["@types/react", "npm:18.2.79"],\
           ["@types/react-dom", "npm:18.2.25"],\
           ["@types/react-pdf", "npm:7.0.0"],\
+          ["@xionhub/token", "npm:0.1.11"],\
           ["canvas", "npm:2.11.2"],\
           ["eslint", "npm:8.57.0"],\
           ["eslint-config-next", "virtual:d3ee54bf0194470f0d6214084130f6e7d9872d160a3dd3ba52c47a0c45807b8e8bb6be340f825920fffcc55a2d34b7cc7190be14ac844a0e2aa1fe97e235851b#npm:14.2.1"],\

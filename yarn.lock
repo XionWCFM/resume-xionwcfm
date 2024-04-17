@@ -451,6 +451,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@xionhub/token@npm:^0.1.11":
+  version: 0.1.11
+  resolution: "@xionhub/token@npm:0.1.11"
+  checksum: 10c0/86e46406c2c8c059440bcdea073238680fcc567a3a76f1ccafde98dad42c0b0a6e2e111cd19be1b63694f335e8ba6e5eec90dbcd3ea9ff4743c47e005d6487b7
+  languageName: node
+  linkType: hard
+
 "abbrev@npm:1":
   version: 1.1.1
   resolution: "abbrev@npm:1.1.1"
@@ -3609,6 +3616,7 @@ __metadata:
     "@types/react": "npm:^18"
     "@types/react-dom": "npm:^18"
     "@types/react-pdf": "npm:^7.0.0"
+    "@xionhub/token": "npm:^0.1.11"
     canvas: "npm:^2.11.2"
     eslint: "npm:^8"
     eslint-config-next: "npm:14.2.1"
