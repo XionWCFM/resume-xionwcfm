@@ -7,6 +7,18 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/$
 import "react-pdf/dist/Page/AnnotationLayer.css";
 import "react-pdf/dist/Page/TextLayer.css";
 
+const getMediaQuery = (size: number) => {
+  if (size >= 1440) {
+    return 1024;
+  }
+
+  if (size >= 768) {
+    return 768;
+  }
+
+  return size;
+};
+
 export default function MyApp() {
   const [_, setNumPages] = useState<number>();
   const [pageNumber] = useState<number>(1);
@@ -18,8 +30,8 @@ export default function MyApp() {
     if (typeof window !== "undefined") {
       const handleResize = () => {
         setWindowSize({
-          width: Math.min(window.innerWidth, 1240),
-          height: Math.min(window.innerHeight, 1240),
+          width: getMediaQuery(window.innerWidth),
+          height: getMediaQuery(window.innerHeight),
         });
       };
 
