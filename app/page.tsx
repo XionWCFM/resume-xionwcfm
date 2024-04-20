@@ -1,10 +1,10 @@
 import { Resume } from '~/src/entities/resume';
 
 export default function MainPage() {
-  const file = '/resume.pdf';
   return (
-    <div>
-      <main className="">
+    <div className=" flex justify-center items-center flex-col">
+      <div className=" mt-32"></div>
+      <main className=" flex justify-center items-center flex-col">
         <Resume />
       </main>
     </div>

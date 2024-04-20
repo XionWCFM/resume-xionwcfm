@@ -6,6 +6,7 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/$
 import 'react-pdf/dist/Page/AnnotationLayer.css';
 import 'react-pdf/dist/Page/TextLayer.css';
 import { useDocument, useWindowSize } from '../../hooks';
+import { Spinner } from '../loading/spinner';
 
 interface PdfRendererProps {
   file: string;
@@ -20,11 +21,12 @@ export const PdfRenderer = ({ file, maxPage }: PdfRendererProps) => {
       className={' w-full flex justify-center items-center flex-col'}
       file={file}
       onLoadSuccess={onDocumentLoadSuccess}
+      loading={<Spinner />}
     >
       {Array.from(new Array(maxPage))
         .map((_, idx) => `page-${idx}`)
         .map((page, idx) => (
-          <Page key={page} width={width} height={height} pageNumber={pageNumber + idx} />
+          <Page loading={null} key={page} width={width} height={height} pageNumber={pageNumber + idx} />
         ))}
     </Document>
   );
